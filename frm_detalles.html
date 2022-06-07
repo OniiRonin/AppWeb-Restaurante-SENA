@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Rancho de Fercho</title>
+
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/mdb.min.css">
+	<link rel="stylesheet" href="./css/all.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="header full-box">
+	    <div class="header-brand text-center full-box">
+	        <a href="principal-restaurant1.html">
+	            <img src="./assets/img/logo.png" alt="logo" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold" >
+	            <ul class="list-unstyled full-box">
+	                <li>
+	                    <a href="principal-restaurant1.html" >Inicio<span class="full-box" ></span></a>
+	                </li>
+	                <li>
+	                    <a href="frm_menu.html" >Menú<span class="full-box" ></span></a>
+	                </li>
+	            </ul>
+	        </nav>
+	        <div class="header-button full-box text-center btn-login-menu" >
+	            <i class="fas fa-user-alt" onclick="show_popup_login()" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Login" ></i>
+	            <div class="div-bordered popup-login">
+
+	                <!-- Inicio de sesion -->
+	                <span class="text-center poppins-regular font-weight-bold">Inicio de sesión</span>
+	                <form class="full-box" action="">
+	                    <div class="form-outline mb-4">
+	                        <input type="email" class="form-control" name="login_email_cliente" id="login_email" maxlength="70" required="" placeholder="Email" >
+	                    </div>
+	                    <div class="form-outline mb-4">
+	                        <input type="password" class="form-control" name="login_clave_cliente" id="login_password" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required="" placeholder="Contraseña" >
+	                    </div>
+	                    <p class="text-center">
+	                        <button class="btn btn-info btn-sm w-100">Iniciar sesión</button>
+	                    </p>
+	                </form>
+	                <hr>
+	                <p class="text-center full-box">¿No tienes cuenta? <a href="frm_registro.html">Regístrate aquí</a></p>
+
+	                <!-- Cerrar sesion --
+	                <div class="text-center full-box">
+	                    <i class="fas fa-user-circle fa-4x"></i>
+	                </div>
+	                <span class="poppins-regular font-weight-bold">Nombre de usuario</span>
+	                <div class="text-center full-box">
+	                    <a href="#" class="btn btn-info btn-sm w-100"><i class="fas fa-user-cog fa-fw"></i> &nbsp; Mi cuenta</a>
+	                </div>
+	                <div class="text-center full-box">
+	                    <a href="#" class="btn btn-info btn-sm w-100"><i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard</a>
+	                </div>
+	                <form class="full-box" action="">
+	                    <button class="btn btn-raised btn-primary btn-sm w-100" ><i class="fas fa-door-open fa-fw"></i> &nbsp; Cerrar sesión</button>
+	                </form>-->
+	                
+	            </div>
+	        </div>
+	        <a href="frm_carrito.html" class="header-button full-box text-center" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Carrito" >
+	            <i class="fas fa-shopping-bag"></i>
+	            <span class="badge bg-warning rounded-pill bag-count" >2</span>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="container container-web-page">
+	    <h3 class="font-weight-bold poppins-regular text-uppercase">Detalles de platillo</h3>
+	    <hr>
+	    <div class="container-fluid">
+	        <div class="row">
+	            <div class="col-12 col-lg-5">
+	                <!--cover-->
+	                <figure class="full-box">
+	                    <img class="img-fluid" src="./assets/platillos/platillo_1.jpg" alt="platillo_">
+	                </figure>
+
+	                <!-- Galery -->
+	                <h5 class="poppins-regular text-uppercase" style="padding-top: 70px;">Galería de imágenes</h5>
+	                <hr>
+	                <div class="galery-details full-box">
+
+	                    <!--cover-->
+	                    <figure class="full-box">
+	                        <a data-fslightbox="gallery" href="./assets/img/banner_3.jpg">
+	                            <img class="img-fluid" src="./assets/img/banner_3.jpg" alt="platillo_">
+	                        </a>
+	                    </figure>
+
+	                    <!--otras-->
+	                    <figure class="full-box">
+	                        <a data-fslightbox="gallery" href="./assets/img/banner_1.jpg">
+	                            <img class="img-fluid" src="./assets/img/banner_1.jpg" alt="platillo_">
+	                        </a>
+	                    </figure>
+
+	                    <figure class="full-box">
+	                        <a data-fslightbox="gallery" href="./assets/img/banner_2.jpg">
+	                            <img class="img-fluid" src="./assets/img/banner_2.jpg" alt="platillo_">
+	                        </a>
+	                    </figure>
+
+	                </div>
+	            </div>
+	            <div class="col-12 col-lg-7">
+
+	                <h4 class="font-weight-bold poppins-regular tittle-details">Bandeja Paisa</h4>
+
+	                <p class="text-justify lead" style="padding: 40px 0;">
+	                    <span class="text-info lead font-weight-bold">Descripción:</span><br>
+	                    La tradicional Bandeja Paisa incluye frijoles, arroz blanco, chicharrón, carne en polvo, chorizo, huevo frito, plátano maduro, aguacate y arepa, pero se puede sustituir la carne en polvo por carne de res o de cerdo a la parrilla.
+	                </p>
+
+	                <p class="lead font-weight-bold">Precio: $15.000 COP</p>
+
+	                <!-- Agregar al carrito -->
+	                <form action="" style="padding-top: 70px;">
+	                    <div class="container-fluid">
+	                        <div class="row">
+	                            <div class="col-12 col-md-6">
+	                                <div class="form-outline mb-4">
+	                                    <input type="text" value="1" class="form-control text-center" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >
+	                                    <label for="product_cant" class="form-label">Cantidad</label>
+	                                </div>
+	                            </div>
+	                            <div class="col-12 col-md-6 text-center">
+	                                <button type="submit" class="btn btn-info"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar al carrito</button>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </form>
+
+	                <!-- Actualizar el carrito -->
+	                <form action="" style="padding-top: 70px;">
+	                    <div class="container-fluid">
+	                        <div class="row">
+	                            <div class="col-12 col-md-6">
+	                                <div class="form-outline mb-4">
+	                                    <input type="text" value="1" class="form-control text-center" id="product_cant" pattern="[0-9]{1,10}" maxlength="10" >
+	                                    <label for="product_cant" class="form-label">Cantidad</label>
+	                                </div>
+	                            </div>
+	                            <div class="col-12 col-md-6 text-center">
+	                                <button type="submit" class="btn btn-success"><i class="fas fa-sync fa-fw"></i> &nbsp; Actualizar carrito</button>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </form>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> Rancho de Fercho</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Colombia</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Cl. 8 #24-55, Melgar, Tolima</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="#" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+</body>
+</html>
